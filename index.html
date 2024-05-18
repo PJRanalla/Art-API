@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <title>My Art Gallery</title>
+</head>
+<body>
+    <div class="header">
+        <h1>My Art Gallery</h1>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery">
+            <figure class="gallery__card" id="fig1" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <div class="card__face card__face--front">
+                    <img src="images/The Creation of Adam.jpeg" alt="The Creation of Adam" id="105073" class="gallery__img">
+                </div>
+                <div class="card__face card__face--back">
+                    <div class="art-info" id="info1">
+                        <h3 id="info1-artist">artist info here</h3>
+                        <h3 id="info1-title">name of painting here</h3>
+                        <h3 id="info1-place">place here</h3>
+                        <h3 id="info1-date">date here</h3>
+                        <h3 id="info1-medium">medium here</h3>
+                    </div>
+                </div>
+            </figure>
+            <figure class="gallery__card" id="fig2" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <div class="card__face card__face--front">
+                    <img src="images/Landscape with Saint John on Patmos.jpeg" alt="Landscape with Saint John on Patmos" id="5848" class="gallery__img">
+                </div>
+                <div class="card__face card__face--back">
+                    <div class="art-info" id="info2">
+                        <h3 id="info2-artist">artist info here</h3>
+                        <h3 id="info2-title">name of painting here</h3>
+                        <h3 id="info2-place">place here</h3>
+                        <h3 id="info2-date">date here</h3>
+                        <h3 id="info2-medium">medium here</h3>
+                    </div>
+                </div>
+            </figure>
+            <figure class="gallery__card" id="fig3" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <div class="card__face card__face--front">
+                    <img src="images/The Fates Gathering in the Stars.jpeg" alt="The Fates Gathering in the Stars" id="74967" class="gallery__img">
+                </div>
+                <div class="card__face card__face--back">
+                    <div class="art-info" id="info3">
+                        <h3 id="info3-artist">artist info here</h3>
+                        <h3 id="info3-title">name of painting here</h3>
+                        <h3 id="info3-place">place here</h3>
+                        <h3 id="info3-date">date here</h3>
+                        <h3 id="info3-medium">medium here</h3>
+                    </div>
+            </figure>
+            <figure class="gallery__card" id="fig4" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <div class="card__face card__face--front">
+                    <img src="images/After the Hurricane, Bahamas.jpeg" alt="After the Hurricane, Bahamas" id="16776" class="gallery__img">
+                </div>
+                <div class="card__face card__face--back">
+                    <div class="art-info" id="info4">
+                        <h3 id="info4-artist">artist info here</h3>
+                        <h3 id="info4-title">name of painting here</h3>
+                        <h3 id="info4-place">place here</h3>
+                        <h3 id="info4-date">date here</h3>
+                        <h3 id="info4-medium">medium here</h3>
+                    </div>
+            </figure>
+            <figure class="gallery__card" id="fig5" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <div class="card__face card__face--front">
+                    <img src="images/Daedalus and Icarus.jpeg" alt="Daedalus and Icarus" id="149019" class="gallery__img">
+                </div>
+                <div class="card__face card__face--back">
+                    <div class="art-info" id="info5">
+                        <h3 id="info5-artist">artist info here</h3>
+                        <h3 id="info5-title">name of painting here</h3>
+                        <h3 id="info5-place">place here</h3>
+                        <h3 id="info5-date">date here</h3>
+                        <h3 id="info5-medium">medium here</h3>
+                    </div>
+            </figure>
+            <figure class="gallery__card" id="fig6" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <div class="card__face card__face--front">
+                    <img src="images/Bar-room Scene.jpeg" alt="Bar-room Scene" id="30709" class="gallery__img">
+                </div>
+                <div class="card__face card__face--back">
+                    <div class="art-info" id="info6">
+                        <h3 id="info6-artist">artist info here</h3>
+                        <h3 id="info6-title">name of painting here</h3>
+                        <h3 id="info6-place">place here</h3>
+                        <h3 id="info6-date">date here</h3>
+                        <h3 id="info6-medium">medium here</h3>
+                    </div>
+            </figure>
+            <figure class="gallery__card" id="fig7" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <div class="card__face card__face--front">
+                    <img src="images/Winged Figure.jpeg" alt="Winged Figure" id="59798" class="gallery__img">
+                </div>
+                <div class="card__face card__face--back">
+                    <div class="art-info" id="info7">
+                        <h3 id="info7-artist">artist info here</h3>
+                        <h3 id="info7-title">name of painting here</h3>
+                        <h3 id="info7-place">place here</h3>
+                        <h3 id="info7-date">date here</h3>
+                        <h3 id="info7-medium">medium here</h3>
+                    </div>
+            </figure>
+            <figure class="gallery__card" id="fig8" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <div class="card__face card__face--front">
+                    <img src="images/Lamentation Over the Dead Christ.jpeg" alt="Lamentation Over the Dead Christ" id="149027" class="gallery__img">
+                </div>
+                <div class="card__face card__face--back">
+                    <div class="art-info" id="info8">
+                        <h3 id="info8-artist">artist info here</h3>
+                        <h3 id="info8-title">name of painting here</h3>
+                        <h3 id="info8-place">place here</h3>
+                        <h3 id="info8-date">date here</h3>
+                        <h3 id="info8-medium">medium here</h3>
+                    </div>
+            </figure>
+            <figure class="gallery__card" id="fig9" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <div class="card__face card__face--front">
+                    <img src="images/Cupid’s Hunting Fields.jpeg" alt="Cupid's Hunting Fields" id="12977" class="gallery__img">
+                </div>
+                <div class="card__face card__face--back">
+                    <div class="art-info" id="info9">
+                        <h3 id="info9-artist">artist info here</h3>
+                        <h3 id="info9-title">name of painting here</h3>
+                        <h3 id="info9-place">place here</h3>
+                        <h3 id="info9-date">date here</h3>
+                        <h3 id="info9-medium">medium here</h3>
+                    </div>
+            </figure>
+        </div>
+    </div>
+
+</body>
+</html>
